@@ -44,7 +44,7 @@ int main()
 
 	time = testTime(data, SIZE, INSERTION);
 	printTime(time, "Insertion sort ", 20);
-	random_shuffle(data, data + SIZE - 1);*/
+	random_shuffle(data, data + SIZE - 1);
 
 
 	time = testTime(data, SIZE, HEAP);
