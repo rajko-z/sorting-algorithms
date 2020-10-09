@@ -50,17 +50,17 @@ def get_time(algorithm, data):
 
 
 if __name__ == '__main__':
-	SIZE = 10000000
+	SIZE = 1000
 	data = [_ for _ in range(SIZE)]
 	random.shuffle(data)
 
 	print("{:<20}{:>10}".format("Algorithm:", "Time:"))
-	# print("{:<20}{:>10}".format("Bubble sort", get_time(BUBBLE_SORT, data)))
-	# random.shuffle(data)
-	# print("{:<20}{:>10}".format("Selection sort", get_time(SELECTION_SORT, data)))
-	# random.shuffle(data)
-	# print("{:<20}{:>10}".format("Insertion sort", get_time(INSERTION_SORT, data)))
-	# random.shuffle(data)
+	print("{:<20}{:>10}".format("Bubble sort", get_time(BUBBLE_SORT, data)))
+	random.shuffle(data)
+	print("{:<20}{:>10}".format("Selection sort", get_time(SELECTION_SORT, data)))
+	random.shuffle(data)
+	print("{:<20}{:>10}".format("Insertion sort", get_time(INSERTION_SORT, data)))
+	random.shuffle(data)
 	print("{:<20}{:>10}".format("Heap sort", get_time(HEAP_SORT, data)))
 	random.shuffle(data)
 	print("{:<20}{:>10}".format("Merge sort", get_time(MERGE_SORT, data)))
